@@ -1,0 +1,40 @@
+{
+  "name": "structure-kit",
+  "version": "0.0.1",
+  "description": "A UI-kit for layout only",
+  "type": "module",
+  "source": "./src/index.ts",
+  "typings": "lib/index.d.ts",
+  "exports": "./lib/structure-kit.js",
+  "main": "lib/structure-kit.js",
+  "module": "./lib/structure-kit.module.js",
+  "unpkg": "./lib/structure-kit.umd.js",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everdimension/structure-kit.git"
+  },
+  "keywords": [
+    "ui-kit",
+    "layout",
+    "structure"
+  ],
+  "author": "everdimension <everdimension@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/everdimension/structure-kit/issues"
+  },
+  "homepage": "https://github.com/everdimension/structure-kit#readme",
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "microbundle": "^0.15.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
