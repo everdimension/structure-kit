@@ -11,6 +11,7 @@
   "unpkg": "./lib/structure-kit.umd.js",
   "scripts": {
     "build": "microbundle --jsx React.createElement",
+    "prepack": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
