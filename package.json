@@ -5,7 +5,10 @@
   "type": "module",
   "source": "./src/index.ts",
   "typings": "lib/index.d.ts",
-  "exports": "./lib/structure-kit.js",
+  "exports": {
+    "require": "./lib/structure-kit.cjs",
+    "default": "./lib/structure-kit.js"
+  },
   "main": "lib/structure-kit.cjs",
   "module": "./lib/structure-kit.module.js",
   "unpkg": "./lib/structure-kit.umd.js",
