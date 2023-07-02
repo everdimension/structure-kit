@@ -6,7 +6,7 @@
   "source": "./src/index.ts",
   "typings": "lib/index.d.ts",
   "exports": "./lib/structure-kit.js",
-  "main": "lib/structure-kit.js",
+  "main": "lib/structure-kit.cjs",
   "module": "./lib/structure-kit.module.js",
   "unpkg": "./lib/structure-kit.umd.js",
   "scripts": {
