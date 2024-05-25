@@ -1,6 +1,6 @@
 {
   "name": "structure-kit",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A UI-kit for layout only",
   "type": "module",
   "source": "./src/index.ts",
@@ -14,7 +14,10 @@
     }
   },
   "main": "./lib/structure-kit.umd.cjs",
-  "files": ["lib", "src"],
+  "files": [
+    "lib",
+    "src"
+  ],
   "unpkg": "./lib/structure-kit.umd.js",
   "scripts": {
     "build": "vite build",
@@ -25,7 +28,11 @@
     "type": "git",
     "url": "git+https://github.com/everdimension/structure-kit.git"
   },
-  "keywords": ["ui-kit", "layout", "structure"],
+  "keywords": [
+    "ui-kit",
+    "layout",
+    "structure"
+  ],
   "author": "everdimension <everdimension@gmail.com>",
   "license": "MIT",
   "bugs": {
