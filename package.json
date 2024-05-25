@@ -6,14 +6,18 @@
   "source": "./src/index.ts",
   "typings": "lib/index.d.ts",
   "exports": {
-    "require": "./lib/structure-kit.cjs",
-    "default": "./lib/structure-kit.js"
+    ".": {
+      "types": "./lib/index.d.ts",
+      "require": "./lib/structure-kit.umd.cjs",
+      "import": "./lib/structure-kit.js",
+      "default": "./lib/structure-kit.js"
+    }
   },
-  "main": "lib/structure-kit.cjs",
-  "module": "./lib/structure-kit.module.js",
+  "main": "./lib/structure-kit.umd.cjs",
+  "files": ["lib", "src"],
   "unpkg": "./lib/structure-kit.umd.js",
   "scripts": {
-    "build": "microbundle --jsx React.createElement",
+    "build": "vite build",
     "prepack": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,11 +25,7 @@
     "type": "git",
     "url": "git+https://github.com/everdimension/structure-kit.git"
   },
-  "keywords": [
-    "ui-kit",
-    "layout",
-    "structure"
-  ],
+  "keywords": ["ui-kit", "layout", "structure"],
   "author": "everdimension <everdimension@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -36,9 +36,10 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.24",
-    "microbundle": "^0.15.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1"
   }
 }
