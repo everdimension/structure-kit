@@ -1,6 +1,6 @@
 {
   "name": "structure-kit",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A UI-kit for layout only",
   "type": "module",
   "source": "./src/index.ts",
